@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<script>
+
+function faça() {
+    var usuário;
+    var senha;
+    var loop;
+    
+    loop = true;
+    do {
+        usuário = window.prompt('Enter a value for usuário');
+        senha = window.prompt('Enter a value for senha');
+        if (usuário == "Davi") {
+            if (senha == "toledo") {
+                window.alert("Usuário e senha correto");
+                loop = true;
+            } else {
+                window.alert("Usuário e senha incorretos");
+            }
+        } else {
+            window.alert("Usuário incorreto");
+        }
+    } while (loop);
+    loop = true;
+}
+function enquanto() {
+    var usuário;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente) {
+        usuário = window.prompt('Enter a value for usuário');
+        senha = window.prompt('Enter a value for senha');
+        if (usuário == "davi") {
+            if (senha == "toledo") {
+                window.alert("Usuário e senha corretos");
+                recorrente = false;
+            } else {
+                window.alert("Usuário ou senha incorreto");
+            }
+        } else {
+            window.alert("Usuário ou senha incorreto");
+        }
+    }
+}
+</script>
+<body>
+
+<button onclick="faça()"> Login Faça </button>
+<button onclick="enquanto()"> Login Enquanto </button>
+
+</body>
+</html>
